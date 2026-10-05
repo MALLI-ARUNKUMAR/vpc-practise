@@ -113,7 +113,7 @@ resource "aws_eip" "elastic" {
     local.common_tags,
     {
       Name = "${var.project}-${var.environment}"
-    }
+    },
     var.elastic_tags
     
   )

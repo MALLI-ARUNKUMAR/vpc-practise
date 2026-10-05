@@ -56,6 +56,6 @@ variable "database_route_table"{
     default = {}
 }
 
-cariable "elastic_tags"{
+variable "elastic_tags"{
     default = {}
 }
