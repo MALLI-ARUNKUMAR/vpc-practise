@@ -8,7 +8,7 @@ locals{
     aws_vpc_final_tags =merge(
                         local.common_tags,
                         {
-                            Name = "${var.project}-${var-environment}
+                            Name = "${var.project}-${var-environment}"
                         },
                         var.aws_vpc_tags
     )
