@@ -12,4 +12,13 @@ locals{
                         },
                         var.aws_vpc_tags
     )
+
+    gw_final_tags = merge(
+                    local.common_tags,
+                        {
+                            Name = "${var.project}-${var.environment}"
+                        },
+                        var.aws_gw_tags
+                         
+    )
 }

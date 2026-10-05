@@ -14,4 +14,8 @@ variable "vpc_cidr" {
 
 variable "aws_vpc_tags"{
         default = {}
-}        
+} 
+
+variable "aws_gw_tags"{
+    default = {}
+}
