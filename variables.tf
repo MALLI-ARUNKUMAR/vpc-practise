@@ -44,3 +44,14 @@ variable "database_subnet_cidr" {
 variable "final_database_subnet"{
     default = {}
 }
+variable "public_route_table"{
+    default = {}
+}
+
+variable "private_route_table"{
+    default = {}
+}
+
+variable "database_route_table"{
+    default = {}
+}
