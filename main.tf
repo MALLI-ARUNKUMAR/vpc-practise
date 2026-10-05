@@ -13,7 +13,7 @@ resource "aws_internet_gateway" "gw" {
   resource "aws_subnet" "public" {
   count = length(var.public_subnet_cidr)
   vpc_id                  = aws_vpc.main.id
-  cidr_block              = var.public_public_cidr[count.index]
+  cidr_block              = var.public_subnet_cidr[count.index]
   availability_zone       = local.az_names
   map_public_ip_on_launch = true # Makes it a public subnet
 
