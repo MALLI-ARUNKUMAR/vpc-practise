@@ -55,3 +55,7 @@ variable "private_route_table"{
 variable "database_route_table"{
     default = {}
 }
+
+cariable "elastic_tags"{
+    default = {}
+}

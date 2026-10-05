@@ -106,4 +106,19 @@ resource "aws_route" "public" {
   gateway_id = aws_internet_gateway.gw.id
 }
 
+resource "aws_eip" "elastic" {
+  domain = "vpc"
+
+  tags = merge(
+    local.common_tags,
+    {
+      Name = "${var.project}-${var.environment}
+    }
+    var.elastic_tags
+    
+  )
+  
+}
+
+
 
