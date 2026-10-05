@@ -21,4 +21,5 @@ locals{
                         var.aws_gw_tags
                          
     )
+    
 }
