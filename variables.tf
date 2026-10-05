@@ -21,7 +21,7 @@ variable "aws_gw_tags"{
 }
 
 
-variable "public_public_cidr" {
+variable "public_subnet_cidr" {
     default = ["10.0.1.0/24","10.0.2.0/24"]
 }
 
