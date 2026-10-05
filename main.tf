@@ -18,7 +18,7 @@ resource "aws_internet_gateway" "gw" {
   map_public_ip_on_launch = true # Makes it a public subnet
 
   tags = merge(
-    local_common_tags,
+    local.common_tags,
     {
       Name = "${var.project}-${var.environment}-public-${local.az_names[count.index]}"
     },
