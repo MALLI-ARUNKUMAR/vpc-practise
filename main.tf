@@ -146,7 +146,8 @@ resource "aws_route" "database" {
 }
 
 resource "aws_route_table_association" "public" {
-  subnet_id      = aws_subnet.public.id
+  count = length(public_subnet_cidr)
+  subnet_id      = aws_subnet.public[count.index].id
   route_table_id = aws_route.public.id
 }
 
