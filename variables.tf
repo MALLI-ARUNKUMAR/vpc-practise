@@ -28,3 +28,19 @@ variable "public_subnet_cidr" {
 variable "final_public_subnet"{
     default = {}
 }
+
+variable "private_subnet_cidr" {
+    default = ["10.0.11.0/24","10.0.12.0/24"]
+}
+
+variable "final_private_subnet"{
+    default = {}
+}
+
+variable "database_subnet_cidr" {
+    default = ["10.0.21.0/24","10.0.22.0/24"]
+}
+
+variable "final_database_subnet"{
+    default = {}
+}
