@@ -23,7 +23,7 @@ resource "aws_internet_gateway" "gw" {
       Name = "${var.project}-${var.environment}-public-${local.az_names[count.index]}"
     },
 
-    final_public.subnet
+    final_public_subnet
 
   )
 }
