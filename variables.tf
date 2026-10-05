@@ -59,3 +59,6 @@ variable "database_route_table"{
 variable "elastic_tags"{
     default = {}
 }
+variable "nat_tags"{
+    default = {}
+}
