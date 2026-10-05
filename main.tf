@@ -112,7 +112,7 @@ resource "aws_eip" "elastic" {
   tags = merge(
     local.common_tags,
     {
-      Name = "${var.project}-${var.environment}
+      Name = "${var.project}-${var.environment}"
     }
     var.elastic_tags
     
